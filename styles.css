@@ -1,5 +1,5 @@
 body{
-  background-color:#87CEEB;
+  background-color:skyblue;
   font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -7,7 +7,7 @@ h1{
   text-align: center;
 }
 .assign{
-  background-color:#ADD8E6;
+  background-color:lightblue;
   margin: 10px;
   padding: 10px;
   display: flex;
