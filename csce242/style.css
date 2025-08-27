@@ -1,0 +1,38 @@
+/* Structure */
+body {
+    font-family: sans-serif;
+    background-size:cover;
+}
+
+#class {
+    background: #6DA686;
+    width: 70%;
+    margin:auto; /* centers */
+    padding:1%; /* get text away from edge */
+    border-radius:5px; /* round corners */
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    border:1px solid #2E5902;
+    padding: 5px 10px;   /*Top & Bottom on the left, Left and Right on right i.e. t&b 5px l&r 10px*/
+}
+
+th {
+    background:#2E5902;;
+}
+
+/* Typography */
+h1 {
+    color:crimson;
+}
+h2 {
+    color: cyan;
+}
+
+
+/* Images */
