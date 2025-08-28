@@ -1,6 +1,6 @@
 /* Structure */
 body {
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background:url("images/cheese-background.jpg");
     background-size:cover;
 }
@@ -11,6 +11,7 @@ body {
     margin:auto;
     padding:1%; 
     border-radius:5px; 
+    box-shadow: 3px 3px #2E5902;
 }
 
 /* Tables */
@@ -33,19 +34,19 @@ td, th{
 }
 
 th {
-    background:#2E5902;;
+    background:#af7d06cb;;
 }
 
 /* Typography */
 h1 {
-    color:crimson;
+    color:#f7cb49;
 }
 h2 {
-    color: cyan;
+    color: #F2BC1B;
 }
 
 
 /* Images */
-#Lester {
-    box-shadow: 3px 3px #2E5902;
+img {
+    box-shadow: 3px 3px #7e4e13;
 }
