@@ -1,0 +1,51 @@
+/* Structure */
+body {
+    font-family: sans-serif;
+    background:url("images/cheese-background.jpg");
+    background-size:cover;
+}
+
+#content {
+    background: #D97A07;
+    width: 70%;
+    margin:auto;
+    padding:1%; 
+    border-radius:5px; 
+}
+
+/* Tables */
+#table {
+    margin:auto;
+    background: #D97A07;
+    width:70%;
+    border-radius:5px;
+    padding:2%;
+    box-shadow: 3px 3px #2E5902;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    border:1px solid #2E5902;
+    padding: 5px 10px;   /*Top & Bottom on the left, Left and Right on right i.e. t&b 5px l&r 10px*/
+}
+
+th {
+    background:#2E5902;;
+}
+
+/* Typography */
+h1 {
+    color:crimson;
+}
+h2 {
+    color: cyan;
+}
+
+
+/* Images */
+#Lester {
+    box-shadow: 3px 3px #2E5902;
+}
