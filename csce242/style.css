@@ -17,16 +17,41 @@ body {
     width: 90%;
     margin:auto;
     border-radius:5px;
+    padding:1%;
+}
+
+#links {
+    background: #32408C;
+    width: 90%;
+    margin:auto;
+    border-radius:5px;
+    padding:1%;
 }
 
 /* Typography */
 h1 {
-    color: #F2AA4C;
+    color: #B4B9D9;
 }
-h2 {
-    color: #F2AA4C;
+h3 {
+    color: #B4B9D9;
 }
 
 a {
-  text-decoration: none;
+    color:chocolate;
+    text-decoration: none;
+}
+
+p {
+    color: #F0F0F0;
+}
+
+#speciallink {
+    margin-left: 5%;
+}
+
+/* Lists */
+ol {
+    color: #F0F0F0;
+    padding:1%;
+    margin-left: 5%;    
 }
