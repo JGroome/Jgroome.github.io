@@ -36,6 +36,7 @@ h2 {
     padding: -10;
     margin: -4;
     list-style: none;
+    gap: 10px;
 }
 
 #links li {
