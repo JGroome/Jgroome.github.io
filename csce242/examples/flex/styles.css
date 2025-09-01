@@ -18,9 +18,11 @@ body {
     padding: 5px;
 }
 
+
 /* Main navigation */
 #main-nav ul{
     list-style-type: none; /* No bullets */
+    padding-left: 0; /* No left padding */
 }
 
 #main-nav li {
@@ -38,6 +40,11 @@ body {
     padding:10px 5px;
 }
 
+#main-nav a:hover {
+    background-color: #ffffff;
+    color: #4C6B1F;
+}
+
 /* Typography */
 h1 {
     text-align: center;
@@ -52,5 +59,31 @@ h1 {
 
     #content {
         width: 70%;
+    }
+
+    /* Columns */
+    .columns {
+        display: flex;
+    }
+
+    /* Main Nav */
+
+    #main-nav li{
+        flex: 1; /* Take up 1 part of the space */
+    }
+
+    #main-nav li, #main-nav li:first-child {
+        border:none;
+    }
+
+    #main-nav a{
+        text-align: center;
+        padding:5px;
+    }
+
+    #main-nav a:hover{
+        background: #4C6B1F;
+        color:white;
+        border-bottom:1px solid white;
     }
 }
