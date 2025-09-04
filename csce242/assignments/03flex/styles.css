@@ -101,3 +101,40 @@ nav a:last-child {
 .gallery img {
   height: 50px;
 }
+
+footer {
+  text-align: center;
+  background: #d97a7a;
+  padding: 15px;
+  color: white;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+  }
+
+  .idea {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .idea img {
+    margin-bottom: 10px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+}
