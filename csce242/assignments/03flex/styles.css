@@ -56,3 +56,21 @@ nav a:last-child {
   max-width: 500px;
 }
 
+/* Second Section */
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.sidebar {
+  flex: 1 1 200px;
+  background: #d97a7a;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  margin: 5px 0;
+}
