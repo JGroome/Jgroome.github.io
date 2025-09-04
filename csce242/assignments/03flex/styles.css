@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f3da;
+  color: #4b7b7a;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background: #d97a7a;
+  justify-content: center;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 1px solid #bbb;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+/* Main layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}

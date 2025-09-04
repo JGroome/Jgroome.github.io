@@ -29,6 +29,10 @@ body {
     margin:5px;
 }
 
+.squirrel .columns div {
+    width:60%;
+}
+
 /* Images */
 img {
     max-width:100%;
