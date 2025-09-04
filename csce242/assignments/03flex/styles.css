@@ -89,3 +89,15 @@ nav a:last-child {
   padding: 15px;
   flex: 1 1 250px;
 }
+
+.card img {
+  display: block;
+  background: #95b8b7;
+  margin: 10px auto;
+  width: 200px;
+  height: 100px;
+}
+
+.gallery img {
+  height: 50px;
+}
