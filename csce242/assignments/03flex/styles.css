@@ -38,3 +38,21 @@ nav a:last-child {
   justify-content: space-around;
   padding: 20px;
 }
+
+.idea {
+  display: flex;
+  flex: 1 1 45%;
+  margin: 10px;
+  gap: 20px;
+}
+
+.idea img {
+  width: 200px;
+  height: 400px;
+  background: #95b8b7;
+}
+
+.idea-text {
+  max-width: 500px;
+}
+
