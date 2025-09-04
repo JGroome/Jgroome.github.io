@@ -1,48 +1,63 @@
 body {
-    background: #172601;
+    background:#4F5902;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #content {
-    width:90%;
+    width:95%;
     margin:auto;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 5px;
-    padding: 5px;
+    background:rgba(255,255,255,0.7);
+    border-radius:5px;
+    padding:5px;
 }
 
 #main-header {
-    color: white;
-    background-color: #4C6B1F;
-    border-radius: 5px;
-    padding: 5px;
+    background:#4F5902;
+    color:white;
+    border-radius:5px;
+    padding:5px;
 }
 
+#main-content section, #main-content aside {
+    padding:5px;
+}
 
-/* Main navigation */
-#main-nav ul{
-    list-style-type: none; /* No bullets */
-    padding-left: 0; /* No left padding */
+.squirrel {
+    background:#4F5902;
+    padding: 5px;
+    border-radius: 5px;
+    margin:5px;
+}
+
+/* Images */
+img {
+    max-width:100%;
+}
+
+/* Main Navigation */
+#main-nav ul {
+    list-style-type: none;  /* remove the bullets */
+    padding-left:0;
 }
 
 #main-nav li {
-    border-bottom:1px solid white; /* Line between items */
+    border-bottom:1px solid white;
 }
 
 #main-nav li:first-child {
-    border-top:1px solid white; /* Line at top of first item */
+    border-top:1px solid white;
 }
 
 #main-nav a {
-    color: white;
-    text-decoration: none; /* No underline */
-    display:block; /* Make the whole area clickable */
+    color:white;
     padding:10px 5px;
+    display:block;
+    text-decoration: none; /* remove the under lines */
 }
 
 #main-nav a:hover {
-    background-color: #ffffff;
-    color: #4C6B1F;
+    background:white;
+    color:#4F5902;
 }
 
 /* Typography */
@@ -50,40 +65,71 @@ h1 {
     text-align: center;
 }
 
+.hide {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+
 /* Larger devices */
 @media only screen and (min-width: 768px) {
     body {
-    background: url("images/Trees.jpg");
-    background-size: cover;
+        background: url(images/Trees.jpg);
+        background-size:cover;
     }
 
     #content {
-        width: 70%;
+        width:70%;
     }
 
     /* Columns */
     .columns {
-        display: flex;
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
     }
 
     /* Main Nav */
-
-    #main-nav li{
-        flex: 1; /* Take up 1 part of the space */
+    #main-nav li {
+        flex:1;
     }
 
     #main-nav li, #main-nav li:first-child {
         border:none;
     }
 
-    #main-nav a{
+    #main-nav a {
         text-align: center;
         padding:5px;
     }
 
-    #main-nav a:hover{
-        background: #4C6B1F;
+    #main-nav a:hover {
+        background:#4F5902;
         color:white;
         border-bottom:1px solid white;
+    }
+
+    .hide-small {
+        display:block;
     }
 }
