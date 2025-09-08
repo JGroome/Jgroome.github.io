@@ -1,6 +1,11 @@
 
 
-
+/* General top section */
+.top-header-section {
+  margin-bottom: -1.4%;
+  background: #000;
+  font-size: 0.9rem;
+}
 
 /* Additional navigation */
 .additional-nav {
@@ -10,7 +15,7 @@
 }
 .additional-nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   list-style: none;
   padding: 5px 20px;
 }
@@ -20,4 +25,60 @@
 .additional-nav a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+}
+.main-header .logo {
+  font-weight: bold;
+}
+.main-header .college-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Nav Bar */
+.nav-bar {
+  background: #7d0000;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  padding: 10px;
+}
+.nav-bar li {
+  margin: 0 15px;
+}
+.nav-bar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* video image section */
+.video-image {
+  position: relative;
+  text-align: left;
+}
+.video-image img {
+  width: 100%;
+  height: auto;
+}
+.video-image {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255,255,255,0.8);
+  padding: 15px 25px;
+}
+.video-image h1 {
+  color: #7d0000;
 }
