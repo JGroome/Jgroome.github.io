@@ -115,16 +115,6 @@ h2 {
 }
 
 
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 18px 0;
-  background: #fff;
-  margin-top: 20px;
-  text-align: center;
-  color: var(--muted);
-}
-
 /* On smaller screens */
 @media (min-width: 640px) {
   .card-grid { grid-template-columns: repeat(2, 1fr); }
