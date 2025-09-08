@@ -116,3 +116,27 @@
   border: 2px solid #000;
 }
 
+/* Programs */
+.programs {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+.programs h2 {
+  color: #7d0000;
+  margin-bottom: 15px;
+}
+.programs p {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+}
+.program-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #7d0000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
