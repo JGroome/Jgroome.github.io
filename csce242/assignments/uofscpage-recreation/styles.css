@@ -172,3 +172,34 @@
   background: #fff;
   color: #000;
 }
+
+/* Quote Section */
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7d0000;
+  color: #fff;
+  padding: 50px 20px;
+}
+.quote-img img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+.quote-text {
+  max-width: 700px;
+}
+.quote blockquote {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+.quote footer {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
