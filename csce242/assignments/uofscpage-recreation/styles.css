@@ -72,13 +72,11 @@
   width: 100%;
   height: auto;
 }
-.video-image {
+.video-image h1{
   position: absolute;
   bottom: 20px;
   left: 20px;
   background: rgba(255,255,255,0.8);
-  padding: 15px 25px;
-}
-.video-image h1 {
   color: #7d0000;
+  padding: 15px 25px;
 }
