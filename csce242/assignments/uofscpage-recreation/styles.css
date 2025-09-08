@@ -319,3 +319,41 @@
   height: auto;
 }
 
+/* 1st Footer */
+.college-footer {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  color: #000;
+}
+.college-footer .college-name {
+  font-size: 1.5rem;
+  color: #7d0000;
+  margin-bottom: 15px;
+}
+.college-footer .btn-dark {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 25px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.college-footer .social-icons a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #7d0000;
+}
+.college-footer .footer-links {
+  margin-top: 20px;
+}
+.college-footer .footer-links a {
+  margin: 0 15px;
+  color: #7d0000;
+  text-decoration: none;
+}
+.college-footer .address {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
