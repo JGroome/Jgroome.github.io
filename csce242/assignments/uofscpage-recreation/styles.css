@@ -80,3 +80,39 @@
   color: #7d0000;
   padding: 15px 25px;
 }
+
+/* Intro area */
+.intro {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Red Block */
+.red-block {
+  display: flex;
+  flex-wrap: wrap;
+  background: #7d0000;
+  color: #fff;
+}
+.red-text, .red-img {
+  flex: 1;
+  padding: 30px;
+}
+.red-text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.red-text .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #7d0000;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
