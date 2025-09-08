@@ -1,0 +1,23 @@
+
+
+
+
+/* Main navigation */
+.main-nav {
+  background: #000;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 5px 20px;
+}
+.main-nav li {
+  margin-left: 15px;
+}
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+}
