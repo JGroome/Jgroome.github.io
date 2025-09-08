@@ -319,41 +319,149 @@
   height: auto;
 }
 
-/* 1st Footer */
+/* ===== 1st Footer ===== */
 .college-footer {
-  background: #f4f4f4;
-  padding: 40px 20px;
+  background: #f0f0f0;
+  padding: 48px 6vw;
   color: #000;
 }
-.college-footer .college-name {
-  font-size: 1.5rem;
-  color: #7d0000;
-  margin-bottom: 15px;
+
+.college-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.2fr;
+  gap: 48px;
+  align-items: start;
 }
-.college-footer .btn-dark {
+
+.college-name {
+  color: #7d0000;
+  font-size: 1.75rem;
+  margin: 0 0 16px;
+}
+
+.college-footer .btn-dark.wide {
   display: inline-block;
-  margin: 15px 0;
-  padding: 12px 25px;
+  padding: 14px 22px;
   background: #000;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 800;
+  box-shadow: 0 4px 0 rgba(0,0,0,.25);
 }
-.college-footer .social-icons a {
-  margin: 0 10px;
-  font-size: 1.2rem;
-  text-decoration: none;
+
+.college-footer .social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+  font-size: 1.35rem;
+}
+
+.col-mid, .col-right {
+  border-left: 1px solid #cfcfcf;
+  padding-left: 32px;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 0;
+}
+
+.quick-links a {
   color: #7d0000;
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
 }
-.college-footer .footer-links {
-  margin-top: 20px;
+
+.quick-links a:hover {
+  text-decoration: underline;
 }
-.college-footer .footer-links a {
-  margin: 0 15px;
+
+.col-right a {
   color: #7d0000;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* ===== 2nd Footer ===== */
+.usc-footer {
+  background: #7d0000;
+  color: #fff;
+  padding: 44px 6vw 24px;
+}
+
+.usc-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+  margin-bottom: 24px;
+}
+
+.usc-logo {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.usc-social a {
+  display: inline-block;
+  margin-left: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.35rem;
+}
+
+.usc-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 48px;
+}
+
+.usc-footer h4 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-weight: 800;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+}
+
+.usc-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.usc-footer li { margin: 6px 0; }
+
+.usc-footer a {
+  color: #fff;
   text-decoration: none;
 }
-.college-footer .address {
-  margin-top: 20px;
-  font-size: 0.95rem;
+.usc-footer a:hover { text-decoration: underline; }
+
+/* Two-column lists for long groups */
+.multi.two-col {
+  columns: 2;            /* auto-balances into two columns */
+  column-gap: 28px;
+}
+
+/* Bottom bar */
+.usc-bottom {
+  border-top: 1px solid rgba(255,255,255,.35);
+  margin-top: 28px;
+  padding-top: 12px;
+  font-size: .92rem;
+  text-align: center;
+  opacity: .95;
 }
