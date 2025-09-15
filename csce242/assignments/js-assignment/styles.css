@@ -1,16 +1,35 @@
 :root{
---bg:#eef1e8; /* page background */
---panel:#f3f1d1; /* card/panel color */
---ink:#3f7c82; /* headings */
---accent:#e78686; /* subheading */
---border:#c7d3c7; /* panel borders on mobile */
+  --bg: #eef1e8;        /* page background */
+  --panel: #f3f1d1;     /* card/panel color */
+  --text: #1e2a2b;
+  --muted: #6b7280;
+  --main-1: #3f7c82;    /* primary accent (headings) */
+  --main-2: #e78686;    /* secondary accent (subheading) */
+  --border: #c7d3c7;   
+  --shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
 
 html, body {
-margin: 0;
-padding: 0;
-color: var(--text);
-background: var(--bg);
-font-family: system-ui, Arial, sans-serif;
-line-height: 1.5;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+
+/* Header */
+.site-header {
+  padding: 18px 0 22px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.site-header h2 {
+  margin: 0;
+  color: var(--main-2);
+  font-size: clamp(1.3rem, 1.1rem + 1vw, 1.8rem);
+  letter-spacing: 0.3px;
 }
