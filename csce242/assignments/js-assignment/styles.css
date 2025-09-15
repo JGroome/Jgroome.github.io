@@ -86,3 +86,10 @@ html, body {
   color: var(--muted);
   font-size: 0.95rem;
 }
+
+/* Smaller Screenls */
+@media (max-width: 780px) {
+  .grid { grid-template-columns: 1fr; gap: 14px; }
+  .panel { border-width: 2px; border-radius: 8px; min-height: auto; }
+  .img-wrap img { width: 320px; }
+}
