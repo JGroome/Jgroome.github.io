@@ -19,3 +19,24 @@
       <p style="padding-left:0px;">Here it comes</p>
     `;
   };
+
+
+  // ===== 2) SELECT A COLOR =====
+  document.getElementById("picker").oninput = () => {
+    const picker = document.getElementById("picker");
+    const swatch = document.getElementById("swatch");
+    const colorSection = document.querySelector('section[aria-labelledby="p2"]');
+
+    // show paragraph
+    let colorOutput = document.getElementById("colorOutput");
+    if (!colorOutput) {
+      colorOutput = document.createElement("p");
+      colorOutput.id = "colorOutput";
+      colorSection.appendChild(colorOutput);
+    }
+    colorOutput.innerHTML = "You picked: " + picker.value;
+    colorOutput.style.color = picker.value;
+  };
+
+
+  
