@@ -1,0 +1,16 @@
+:root{
+--bg:#eef1e8; /* page background */
+--panel:#f3f1d1; /* card/panel color */
+--ink:#3f7c82; /* headings */
+--accent:#e78686; /* subheading */
+--border:#c7d3c7; /* panel borders on mobile */
+}
+
+html, body {
+margin: 0;
+padding: 0;
+color: var(--text);
+background: var(--bg);
+font-family: system-ui, Arial, sans-serif;
+line-height: 1.5;
+}

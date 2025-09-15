@@ -32,8 +32,9 @@ document.getElementById("btn-clear").onclick = () => {
     pFeeling.classList.remove("happy");
 }
 
-document.getElementById("txt-emotion").onKeyup = (event) => {
-    const userInput = event.currentTarget.value
-    document.getElementById("p-emotion").innerHTML = 'You are feeling $(userInput).';
+document.getElementById("txt-emotion").onkeyup = (event) => {
+    console.log
+    const userInput = event.currentTarget.value;
+    document.getElementById("p-emotion").innerHTML = `You are feeling ${userInput}`;
     document.getElementById("img-emotion").classList.remove("hidden");
 }
