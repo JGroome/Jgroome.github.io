@@ -33,3 +33,30 @@ html, body {
   font-size: clamp(1.3rem, 1.1rem + 1vw, 1.8rem);
   letter-spacing: 0.3px;
 }
+
+/* Main grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 28px 0 0;
+  padding: 0;
+  flex: 1; 
+}
+
+/* Panels */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  min-height: 260px;
+}
+
+.panel h3 {
+  margin: 0 0 12px;
+  text-align: center;
+  color: var(--main-1);
+  font-size: 1.15rem;
+}
