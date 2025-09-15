@@ -60,3 +60,29 @@ html, body {
   color: var(--main-1);
   font-size: 1.15rem;
 }
+
+/* Color picker */
+.color-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+}
+
+/* Image */
+.img-wrap { display: flex; justify-content: center; }
+.img-wrap img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  cursor: pointer; /* shows it’s clickable */
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
