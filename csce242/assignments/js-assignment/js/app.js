@@ -38,5 +38,24 @@
     colorOutput.style.color = picker.value;
   };
 
+  // ===== 3) IMAGE CHANGE =====
+  const toggleBtn = document.getElementById("toggle");
+  if (toggleBtn) toggleBtn.remove();
 
-  
+  const img = document.getElementById("skyImg");
+  img.style.cursor = "pointer";
+
+  const CLOUDY_URL =
+    "https://img.freepik.com/premium-vector/cloudy-weather-cartoon_543090-877.jpg?w=2000";
+  const SUNNY_URL =
+    "https://thumbs.dreamstime.com/b/good-morning-sunshine-cute-cartoon-style-greeting-card-smiling-sun-character-clouds-text-sunny-eps-260793665.jpg";
+
+  let sunny = false;
+  img.src = CLOUDY_URL;
+
+  img.onclick = function () {
+    sunny = !sunny;
+    img.src = sunny ? SUNNY_URL : CLOUDY_URL;
+  };
+
+
