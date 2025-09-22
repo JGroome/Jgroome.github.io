@@ -45,3 +45,14 @@ function updateClock(){
 }
 setInterval(updateClock, 1000);
 updateClock();
+
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+let menuOpen = false;
+
+menuToggle.addEventListener('click', ()=>{
+  menuOpen = !menuOpen;
+  mobileMenu.style.display = menuOpen ? "flex" : "none";
+  menuToggle.textContent = menuOpen ? "▲ Menu" : "▼ Menu";
+});
