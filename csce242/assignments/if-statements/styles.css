@@ -78,3 +78,9 @@ nav ul li:hover {
     display: none;
   }
 }
+
+
+/* Section to hide 1 or 2 */
+.hidden {
+  display: none;
+}

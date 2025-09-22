@@ -1,3 +1,10 @@
+// Section Toggle
+function showSection(section){
+  document.getElementById('planting').classList.add('hidden');
+  document.getElementById('clock').classList.add('hidden');
+  document.getElementById(section).classList.remove('hidden');
+}
+
 
 // Plant Slider Logic
 const range = document.getElementById('daysRange');
@@ -25,3 +32,6 @@ function updatePlantMsg(val){
 }
 range.addEventListener('input', ()=> updatePlantMsg(range.value));
 updatePlantMsg(range.value);
+
+
+// Clock Logic
