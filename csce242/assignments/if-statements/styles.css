@@ -45,3 +45,36 @@ nav ul li:last-child::after {
 nav ul li:hover {
   text-decoration: underline;
 }
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #007777;
+  margin-bottom: 8px;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+}
+.mobile-menu li {
+  display: block;
+  margin: 5px 0;
+  color: #007777;
+  cursor: pointer;
+}
+
+
+/* Screen Sizes */
+@media(max-width:600px){
+  nav ul {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
