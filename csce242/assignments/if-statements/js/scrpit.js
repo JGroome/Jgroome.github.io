@@ -35,3 +35,13 @@ updatePlantMsg(range.value);
 
 
 // Clock Logic
+function updateClock(){
+  const now = new Date();
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  let ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  document.getElementById('time').textContent = `${hours}:${minutes} ${ampm}`;
+}
+setInterval(updateClock, 1000);
+updateClock();

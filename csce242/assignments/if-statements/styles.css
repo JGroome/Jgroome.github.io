@@ -65,6 +65,18 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+/* Section to hide 1 or 2 */
+.hidden {
+  display: none;
+}
+
+/* Box styling */
+.content-box {
+  border: 1px solid #bbb;
+  padding: 20px;
+  background: #fff;
+  margin-top: 15px;
+}
 
 /* Screen Sizes */
 @media(max-width:600px){
@@ -79,8 +91,3 @@ nav ul li:hover {
   }
 }
 
-
-/* Section to hide 1 or 2 */
-.hidden {
-  display: none;
-}
