@@ -10,3 +10,17 @@ body {
   gap: 1rem;
   margin: 20px;
 }
+
+.card {
+  position: relative;
+  border: 5px solid #e99999;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
