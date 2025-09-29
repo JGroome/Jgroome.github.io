@@ -14,6 +14,12 @@ const afterPics = {
   "Charlie": "https://lipsum.app/640x480/"
 };
 
+const gallery = document.getElementById("gallery");
+const popup = document.getElementById("popup");
+const popupTitle = document.getElementById("popup-title");
+const popupImg = document.getElementById("popup-img");
+const closeBtn = document.getElementById("close");
+
 // Loop to create gallery cards
 for (let dog in beforePics) {
   let card = document.createElement("div");
@@ -29,4 +35,13 @@ for (let dog in beforePics) {
   card.appendChild(img);
   card.appendChild(caption);
   gallery.appendChild(card);
+
+  // On click, show popup with after picture
+  card.addEventListener("click", () => {
+    popupTitle.textContent = `${dog} after adoption`;
+    popupImg.src = afterPics[dog];
+    popup.classList.remove("hidden");
+  });
 }
+
+
