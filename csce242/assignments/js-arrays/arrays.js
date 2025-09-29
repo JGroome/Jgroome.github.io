@@ -44,4 +44,8 @@ for (let dog in beforePics) {
   });
 }
 
+// Close popup
+closeBtn.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
 
