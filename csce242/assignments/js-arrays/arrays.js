@@ -17,6 +17,7 @@ const afterPics = {
 // Loop to create gallery cards
 for (let dog in beforePics) {
   let card = document.createElement("div");
+  card.className = "card";
 
   let img = document.createElement("img");
   img.src = beforePics[dog];
@@ -25,5 +26,7 @@ for (let dog in beforePics) {
   let caption = document.createElement("div");
   caption.textContent = `Please adopt ${dog}`;
 
-  
+  card.appendChild(img);
+  card.appendChild(caption);
+  gallery.appendChild(card);
 }
