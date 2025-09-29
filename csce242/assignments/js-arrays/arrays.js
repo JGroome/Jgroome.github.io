@@ -1,17 +1,17 @@
 // Before adoption
 const beforePics = {
-  "Barbie": "https://lipsum.app/640x480/",
-  "Max": "https://lipsum.app/640x480/",
-  "Bella": "https://lipsum.app/640x480/",
-  "Charlie": "https://lipsum.app/640x480/"
+  "Barbie": "images/dogb1.jpg",
+  "Max": "images/dogb2.jpg",
+  "Bella": "images/dogb3.jpg",
+  "Charlie": "images/dogb4.jpg"
 };
 
 // After adoption
 const afterPics = {
-  "Barbie": "https://lipsum.app/640x480/",
-  "Max": "https://lipsum.app/640x480/",
-  "Bella": "https://lipsum.app/640x480/",
-  "Charlie": "https://lipsum.app/640x480/"
+  "Barbie": "images/dogf1.jpg",
+  "Max": "images/dogf2.jpg",
+  "Bella": "images/dogf3.jpg",
+  "Charlie": "images/dogf4.jpg"
 };
 
 const gallery = document.getElementById("gallery");
