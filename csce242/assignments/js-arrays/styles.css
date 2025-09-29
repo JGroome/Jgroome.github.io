@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8fdf8;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px;
+}
