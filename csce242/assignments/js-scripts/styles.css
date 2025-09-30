@@ -35,9 +35,116 @@ body.night button{
   border-color:#ffffff22;
 }
 
-/*  Scene  */
+/*  Scene stage  */
 .scene{
   position:relative;
   height:68vh;
   overflow:hidden;
+}
+
+/* Clouds 
+*  Based on https://codepen.io/iranh00/pen/nXdPqj
+*/
+.cloud {
+  position:absolute;
+  width:350px;
+  height:180px;
+}
+
+.cloud-main {
+  width: 350px;
+  height: 130px;
+  background: linear-gradient(#F2F2F2 70%, #E5E5E5);
+  border-radius: 100em;
+  position: absolute;
+  top: 50px;
+  box-shadow: 0 3px 5px rgba(0,0,0, 0.3);
+  z-index: 100;
+}
+
+.cloud-center {
+  width: 180px;
+  height: 180px;
+  background: #F2F2F2;
+  position: absolute;
+  border-radius: 100em;
+  top: -30px;
+  right: 50px;
+}
+
+.cloud-left {
+  width: 130px;
+  height: 130px;
+  background: #F2F2F2;
+  position: absolute;
+  border-radius: 100em;
+  top: 0;
+  right: 160px;
+}
+
+/* Night version of clouds */
+body.night .cloud-main,
+body.night .cloud-center,
+body.night .cloud-left {
+  background: #d9d9d9;
+}
+
+/*  Trees
+*
+*/
+.tree{
+  position:absolute;
+  width:84px;
+  height:130px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.tree .crown{
+  position:absolute;
+  top:0;
+  width:84px;
+  height:84px;
+  background:green;
+  border-radius:50%;
+  box-shadow: inset 0 -6px 0 #00000022;
+}
+.tree .trunk{
+  width:20px;
+  height:34px;
+  margin-bottom:10px;
+  background:brown;
+  border-radius:6px;
+}
+
+/*  Sun / Moon  */
+.sun{
+  position:absolute;
+  width:120px;
+  height:120px;
+  right:4vw;
+  top:3vh;
+  background:#ffd400;
+  border-radius:50%;
+}
+
+.moon{
+  position:absolute;
+  width:120px;
+  height:120px;
+  right:4vw;
+  top:3vh;
+  background:#f4eca3;
+  border-radius:50%;
+}
+
+.moon::after{
+  content:"";
+  position:absolute;
+  width:90px;
+  height:90px;
+  right:6px;
+  top:6px;
+  background:#020314;
+  border-radius:50%;
 }
