@@ -1,0 +1,20 @@
+body{
+  margin:0;
+  font-family:system-ui,Arial,sans-serif;
+  background:#bfe3ee;
+  color:#244048;
+}
+
+header{
+    text-align:center;
+    padding:26px 12px 8px;
+}    
+
+button{
+  font:inherit;
+  padding:.4rem .8rem;
+  border:1px solid #3333;
+  border-radius:8px;
+  background:#fff;
+  cursor:pointer;
+}
