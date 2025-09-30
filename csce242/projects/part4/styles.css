@@ -1,4 +1,14 @@
-
+/* Main colors */
+:root {
+  --color-bg: #13171B;
+  --color-surface: #20252B;
+  --color-border: #141B22;
+  --color-text: #FFFFFF;
+  --color-text-muted: #b2b7c1;
+  --main-color: #2563eb;     
+  --color-accent: #3b82f6;  
+  --color-soft: #011526;   
+}
 
 /* Box sizing & typography */
 
@@ -12,8 +22,8 @@ body {
   padding: 0;
   line-height: 1.5;
   font-family: Arial, sans-serif;
-  color: #111;               
-  background: #fafafa;       
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 /* Utilities */
@@ -25,7 +35,7 @@ img {
 }
 
 a {
-  color: inherit;         
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -41,7 +51,7 @@ button {
   flex-direction: column;
 }
 
-/*  Header  */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -52,8 +62,8 @@ button {
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .logo {
@@ -61,10 +71,11 @@ button {
   place-items: center;
   width: 120px;
   height: 40px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   font-weight: 700;
-  background: #fff;
+  background: var(--color-soft);
+  color: var(--main-color);
 }
 
 .search {
@@ -75,9 +86,10 @@ button {
 .search input {
   width: 100%;
   padding: 10px 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: #fff;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .nav {
@@ -89,9 +101,15 @@ button {
 
 .nav a {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: #fff;
+  background: var(--color-soft);
+  color: var(--color-text);
+}
+
+.nav a:hover {
+  background: var(--main-color);
+  color: #fff;
 }
 
 /* Main content */
@@ -100,10 +118,10 @@ main {
   padding: 16px;
 }
 
-/*  Footer  */
+/* Footer */
 .site-footer {
-  background: #fff;
-  border-top: 1px solid #ddd;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
   padding: 24px 16px;
 }
 
@@ -118,13 +136,13 @@ main {
 
 .brand-blurb {
   max-width: 720px;
-  color: #444;
+  color: var(--color-text-muted);
 }
 
 .legal {
   display: flex;
   gap: 16px;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 /* Reusable blocks & sections */
@@ -133,8 +151,8 @@ main {
   max-width: 1200px;
   margin: 16px auto;
   padding: 12px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 22px;
 }
 
@@ -149,30 +167,35 @@ main {
 .btn {
   display: inline-block;
   padding: 0.6rem 1rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 999px;
-  background: #fff;
+  background: var(--main-color);
+  color: #fff;
   cursor: pointer;
   font-weight: 600;
+}
+
+.btn:hover {
+  background: #1e4ed8;
 }
 
 .btn:active {
   transform: translateY(1px);
 }
 
-/* annoucement bar */
+/* Announcement bar */
 .announcement {
   max-width: 1200px;
   margin: 24px auto;
   padding: 10px 16px;
   text-align: center;
-  color: #666;
-  border: 1px dashed #ccc;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
   border-radius: 12px;
-  background: #fff;
+  background: var(--color-soft);
 }
 
-/* Two collumn for main page */
+/* Two-column for main page */
 .two-col {
   max-width: 1200px;
   margin: 24px auto;
@@ -182,12 +205,13 @@ main {
 }
 
 .divider {
-  background: #e6e6e6;
+  background: var(--color-border);
   border-radius: 8px;
 }
 
 .col h2 {
   margin: 0 0 12px;
+  color: var(--main-color);
 }
 
 /* Image + text horizontal cards */
@@ -201,21 +225,21 @@ main {
 
 .card-row .thumb {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 12px;
-  background: #fff;
+  background: var(--color-surface);
 }
 
-/* Text Bubble to reuse */
+/* Text Bubble */
 .text-bubble {
   margin-bottom: 14px;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 12px;
-  background: #fff;
+  background: var(--color-surface);
 }
 
-/*  Pill group */
+/* Pill group */
 .pill-list {
   display: flex;
   flex-wrap: wrap;
@@ -225,18 +249,19 @@ main {
 
 .pill {
   padding: 0.35rem 0.7rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  background: #fff;
+  background: var(--color-soft);
+  color: var(--color-text);
 }
 
-/* Rounded block to reused on pages */
+/* Rounded block */
 .rounded-block {
   max-width: 1200px;
   margin: 24px auto;
   padding: 24px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 28px;
 }
 
@@ -253,13 +278,13 @@ main {
   align-items: center;
 }
 
-/* Framed section (Sets page) */
+/* Sets page */
 .section-frame {
   max-width: 1200px;
   margin: 24px auto;
   padding: 16px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
 }
 
@@ -273,12 +298,12 @@ main {
 
 .set-card {
   padding: 16px;
-  background: #fafafa;
-  border: 1px solid #ddd;
+  background: var(--color-soft);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
-/* Starter decks rows */
+/* Starter decks */
 .starter-row {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -288,12 +313,12 @@ main {
 
 .starter-desc {
   padding: 16px;
-  background: #fafafa;
-  border: 1px solid #ddd;
+  background: var(--color-soft);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
-/* Leaders list & filters */
+/* Leaders */
 .leaders-header {
   max-width: 1200px;
   margin: 16px auto 8px;
@@ -323,16 +348,17 @@ main {
 
 .leader-card {
   padding: 12px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
 .leader-card h3 {
   margin: 0.5rem 0 0;
+  color: var(--color-accent);
 }
 
-/* Leader detail header block */
+/* Leader detail */
 .leader-hero {
   max-width: 1200px;
   margin: 16px auto;
@@ -344,19 +370,19 @@ main {
 
 .leader-hero-media {
   padding: 8px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
 .leader-hero-info {
   padding: 12px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
 }
 
-/* Simple pill navigation */
+/* Pills (tabs) */
 .pills {
   display: flex;
   flex-wrap: wrap;
@@ -365,22 +391,23 @@ main {
 
 .pills a {
   padding: 0.45rem 0.8rem;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-soft);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
+  color: var(--color-text);
 }
 
 .pills a.active {
-  outline: 2px solid #999; 
+  background: var(--main-color);
+  color: #fff;
 }
 
 .pill-content {
   margin-top: 10px;
-  color: #444;
+  color: var(--color-text-muted);
 }
 
-/* Responsive adjustments */
-
+/* Responsive */
 @media (max-width: 900px) {
   .site-header {
     grid-template-columns: 100px 1fr;
