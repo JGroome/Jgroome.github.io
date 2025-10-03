@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment - Paintings Gallery</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Assignment</h1>
+    <p class="subtitle">Classes</p>
+  </header>
+
+  <main class="site-main">
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <small>@josephgroome</small>
+  </footer>
+
+  <div id="paintingModal" class="w3-modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+  <div class="w3-modal-content modal-card">
+    <header class="w3-container modal-header">
+      <span id="modalClose" class="w3-button w3-display-topright" title="Close dialog" aria-label="Close dialog">&times;</span>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <p class="modal-artist"></p>
+    </header>
+    <div class="w3-container modal-body">
+      <div id="modalImageWrap" class="modal-image-wrap"></div>
+      <p class="modal-meta">
+        <span id="frameBadge" class="badge" hidden>Framed</span>
+        <span id="unframedNote" class="muted" hidden>Not framed</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- Scripts -->
+  <script src="paintings.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
