@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Roronoa Zoro",
+        "image": "images/green-zoro.png",
+        "color": "Green",
+        "playstyle": "Aggro, Board Control"
+    },
+    {
+        "name": "Silvers Rayleigh",
+        "image": "images/red-rayleigh.png",
+        "color": "Red",
+        "playstyle": "Aggro, Board Swarm"
+    },
+    {
+        "name": "Monkey D. Luffy",
+        "image": "images/up-luffy.png",
+        "color": "Blue / Purple",
+        "playstyle": "Ramp, Board Swarm"
+    },
+    {
+        "name": "Imu",
+        "image": "images/black-imu.png",
+        "color": "Black",
+        "playstyle": "Board Swarm, Board Control"
+    }
+]
